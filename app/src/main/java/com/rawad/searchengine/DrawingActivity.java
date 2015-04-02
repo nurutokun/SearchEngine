@@ -19,14 +19,17 @@ public class DrawingActivity extends View {
 		paint = new Paint();
 
 	}
-		
+	
 	@Override
 	public void onDraw(Canvas canvas) {
 		
         paint.setColor(Color.BLUE);
         paint.setStrokeWidth(30);
 		
-        canvas.drawRect(getWidth()/2, getHeight()/2, 50, 50, paint);
+		int x = getWidth()/2;
+		int y = getHeight()/2;
+		
+        canvas.drawRect(x, y, x+50, y+50, paint);
 
 	}
 
