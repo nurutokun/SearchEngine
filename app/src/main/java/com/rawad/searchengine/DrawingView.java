@@ -12,7 +12,7 @@ import android.view.View;
 /**
  * Created by Rawad on 02/04/2015.
  */
-public class DrawingActivity extends View {
+public class DrawingView extends View {
 	
 	private Paint paint;
 	
@@ -20,7 +20,7 @@ public class DrawingActivity extends View {
 	
 	private Bitmap bm;
 	
-	public DrawingActivity(Context context) {
+	public DrawingView(Context context) {
 		super(context);
 		
 		paint = new Paint();

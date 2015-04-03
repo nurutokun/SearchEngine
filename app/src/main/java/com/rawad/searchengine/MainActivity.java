@@ -1,21 +1,20 @@
 package com.rawad.searchengine;
 
-import android.graphics.Canvas;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 	
-    private DrawingActivity drawer;
+    private DrawingView drawer;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 		
-        drawer = new DrawingActivity(this);
+        drawer = new DrawingView(this);
 		
         setContentView(drawer);
 		
