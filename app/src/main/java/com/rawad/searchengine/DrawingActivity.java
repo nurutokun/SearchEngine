@@ -41,6 +41,7 @@ public class DrawingActivity extends View {
 		int y = getHeight()/2;
 			
         canvas.drawRect(x, y, x + 50, y + 50, paint);
+		// This should work
 		canvas.drawBitmap(bm, 0, 0, null);
 		
 	}
