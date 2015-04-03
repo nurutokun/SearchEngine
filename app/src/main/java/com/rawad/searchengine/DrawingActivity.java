@@ -1,10 +1,10 @@
 package com.rawad.searchengine;
 
+import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
-import android.content.Context;
 
 /**
  * Created by Rawad on 02/04/2015.
@@ -28,9 +28,9 @@ public class DrawingActivity extends View {
 		
 		int x = getWidth()/2;
 		int y = getHeight()/2;
+			
+        canvas.drawRect(x, y, x + 50, y + 50, paint);
 		
-        canvas.drawRect(x, y, x+50, y+50, paint);
-
 	}
 
 }
