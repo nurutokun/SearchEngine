@@ -34,8 +34,8 @@ public class DrawingActivity extends View {
 	@Override
 	public void onDraw(Canvas canvas) {
 		
-        paint.setColor(Color.BLUE);
-        paint.setStrokeWidth(30);
+		paint.setColor(Color.BLUE);
+		paint.setStrokeWidth(30);
 		
 		int x = getWidth()/2;
 		int y = getHeight()/2;
