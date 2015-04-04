@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Sweet Search Engine"
+        android:text="@string/app_title"
         android:id="@+id/mainTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -45,10 +45,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="By Egah and Rawad. Copyright 2015"
+        android:text="@string/copyright_statement"
         android:id="@+id/copyrightText"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textColor="#000033"/>
+        android:textColor="#000033"
+        />
 </RelativeLayout>

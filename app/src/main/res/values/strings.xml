@@ -5,7 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_loading_screen">LoadingScreenActivity</string>
-    
+    <string name="settings_gear_description">Redirects to the Settings Activity</string>
+    <string name="app_title">Quran Search Engine</string>
+    <string name="copyright_statement">By Egah and Rawad. Copyright 2015</string>
+
     <drawable name="gear.png">gear</drawable>
     
 </resources>
