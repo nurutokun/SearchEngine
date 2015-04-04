@@ -23,7 +23,7 @@ public class LoadingScreenActivity extends ActionBarActivity {
 		initialProgressBar = (ProgressBar) findViewById(R.id.initialProgressBar);
 		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
 		
-//		LoadingIntentService.startActionFoo();
+		LoadingIntentService.startActionFoo(getApplicationContext(), "first thing", "second thing");
 		
 	}
 	

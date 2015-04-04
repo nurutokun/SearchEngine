@@ -1,5 +1,6 @@
 package com.rawad.searchengine;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -25,6 +26,8 @@ public class MainActivity extends ActionBarActivity {
 		
 		int id = view.getId();
 		
+		Intent intent = null;
+		
 		switch(id) {
 			
 			case R.id.searchButton:
@@ -39,6 +42,10 @@ public class MainActivity extends ActionBarActivity {
 				// go to settings activity
 				break;
 			
+		}
+		
+		if(intent != null) {
+			startActivity(intent);
 		}
 		
 	}
