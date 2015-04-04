@@ -13,7 +13,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/initialLoadingBar"
+        android:id="@+id/initialProgressBar"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:progress="20"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/loaderAnimation"
-        android:layout_above="@+id/initialLoadingBar"
+        android:layout_above="@+id/initialProgressBar"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="56dp"
         android:minHeight="100dp"
@@ -44,9 +44,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/infoText"
+        android:text="By Egah and Rawad. Copyright 2015"
+        android:id="@+id/copyrightText"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:textColor="#000033"/>
 </RelativeLayout>

@@ -4,14 +4,25 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 
 public class LoadingScreenActivity extends ActionBarActivity {
-
+	
+	// Create a new thread to update the progress of this using the setProgress(int) method
+	private ProgressBar initialProgressBar;
+	// Maybe main thread updates this?
+	private ImageView loaderAnimation;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_loading_screen);
+		
+		initialProgressBar = (ProgressBar) findViewById(R.id.initialProgressBar);
+		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
+		
 	}
 
 
