@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 	
@@ -19,6 +20,28 @@ public class MainActivity extends ActionBarActivity {
         setContentView(drawer);
 		
     }
+	
+	public void onClick(View view) {
+		
+		int id = view.getId();
+		
+		switch(id) {
+			
+			case R.id.searchButton:
+				// go to search activity
+				break;
+			
+			case R.id.readButton:
+				// go to read activity
+				break;
+			
+			case R.id.gearIcon:
+				// go to settings activity
+				break;
+			
+		}
+		
+	}
 	
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

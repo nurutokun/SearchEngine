@@ -12,7 +12,8 @@
         android:id="@+id/readButton"
         android:layout_marginTop="225dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -21,7 +22,8 @@
         android:id="@+id/searchButton"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/readButton"
-        android:layout_alignStart="@+id/readButton"/>
+        android:layout_alignStart="@+id/readButton"
+        android:onClick="onClick"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -32,5 +34,7 @@
         android:layout_alignParentEnd="true"
         android:minHeight="40dp"
         android:minWidth="40dp"
-        android:src="@drawable/gear"/>
+        android:src="@drawable/gear"
+        android:contentDescription="Redirects to the Settings Activity"
+        android:onClick="onClick"/>
 </RelativeLayout>

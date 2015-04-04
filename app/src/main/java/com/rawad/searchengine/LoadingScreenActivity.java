@@ -19,13 +19,14 @@ public class LoadingScreenActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_loading_screen);
-		
+
 		initialProgressBar = (ProgressBar) findViewById(R.id.initialProgressBar);
 		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
 		
+//		LoadingIntentService.startActionFoo();
+		
 	}
-
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -47,4 +48,5 @@ public class LoadingScreenActivity extends ActionBarActivity {
 
 		return super.onOptionsItemSelected(item);
 	}
+	
 }
