@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 
 public class MainActivity extends ActionBarActivity {
 	
@@ -18,8 +19,8 @@ public class MainActivity extends ActionBarActivity {
 		
         drawer = new DrawingView(this);
 		
-        setContentView(drawer);
-		
+	    addContentView(drawer, new ViewGroup.LayoutParams(50, 50));// width, height
+	    
     }
 	
 	public void onClick(View view) {
