@@ -9,7 +9,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Read"
+        android:text="@string/read"
         android:id="@+id/readButton"
         android:onClick="onClick"
         android:layout_above="@+id/searchButton"
@@ -18,7 +18,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search"
+        android:text="@string/search"
         android:id="@+id/searchButton"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/readButton"

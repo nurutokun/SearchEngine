@@ -8,6 +8,8 @@
     <string name="settings_gear_description">Redirects to the Settings Activity</string>
     <string name="app_title">Quran Search Engine</string>
     <string name="copyright_statement">By Egah and Rawad. Copyright 2015</string>
+    <string name="search">Search</string>
+    <string name="read">Read</string>
 
     <drawable name="gear.png">gear</drawable>
     
