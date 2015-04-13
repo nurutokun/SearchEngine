@@ -11,10 +11,9 @@
         android:layout_height="wrap_content"
         android:text="Read"
         android:id="@+id/readButton"
-        android:layout_marginTop="225dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:layout_above="@+id/searchButton"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="wrap_content"
