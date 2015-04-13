@@ -1,5 +1,6 @@
 package com.rawad.searchengine;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -24,6 +25,8 @@ public class LoadingScreenActivity extends ActionBarActivity {
 		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
 		
 		LoadingIntentService.startActionFoo(getApplicationContext(), "first thing", "second thing");
+		
+		startActivity(new Intent(this, MainActivity.class));
 		
 	}
 	
