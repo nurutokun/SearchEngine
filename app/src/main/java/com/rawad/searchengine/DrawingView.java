@@ -27,7 +27,7 @@ public class DrawingView extends View {
 		
 		picture = new Picture();
 		
-		bm = BitmapFactory.decodeFile("res/drawable/hdpi/ic_launcher.png");
+		bm = BitmapFactory.decodeFile("res/drawable/ic_launcher.png");
 		
 	}
 	
