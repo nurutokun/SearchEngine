@@ -26,6 +26,12 @@ public class LoadingScreenActivity extends ActionBarActivity {
 		
 		LoadingIntentService.startActionFoo(getApplicationContext(), "first thing", "second thing");
 		
+		try {
+			Thread.sleep(10000);
+		} catch(Exception ex) {
+			
+		}
+		
 		startActivity(new Intent(this, MainActivity.class));
 		
 	}

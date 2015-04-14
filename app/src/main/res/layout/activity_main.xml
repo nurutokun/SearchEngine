@@ -20,10 +20,8 @@
         android:layout_height="wrap_content"
         android:text="@string/search"
         android:id="@+id/searchButton"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/readButton"
-        android:layout_alignStart="@+id/readButton"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:layout_centerInParent="true"/>
 
     <ImageView
         android:layout_width="wrap_content"

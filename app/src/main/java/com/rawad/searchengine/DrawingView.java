@@ -27,7 +27,7 @@ public class DrawingView extends View {
 		
 		picture = new Picture();
 		
-		bm = BitmapFactory.decodeFile("res/drawable/ic_launcher.png");
+		bm = BitmapFactory.decodeFile("res/drawable/hdpi/ic_launcher.png");
 		
 	}
 	
@@ -41,7 +41,9 @@ public class DrawingView extends View {
 		int y = getHeight()/2;
 		
 		canvas.drawRect(x, y, x + 50, y + 50, paint);
-		canvas.drawBitmap(bm, 0, 0, null);
+		
+		if(bm != null)
+			canvas.drawBitmap(bm, 0, 0, paint);
 		
 	}
 	
