@@ -21,6 +21,10 @@ public class MainActivity extends ActionBarActivity {
 		
 	    addContentView(drawer, new ViewGroup.LayoutParams(50, 50));// width, height
 	    
+	    // if(!loaded)
+	    startActivity(new Intent(this, LoadingScreenActivity.class));
+	    
+	    
     }
 	
 	public void onClick(View view) {
