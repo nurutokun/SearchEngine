@@ -45,6 +45,7 @@ public class MainActivity extends ActionBarActivity {
 			
 			case R.id.gearIcon:
 				// go to settings activity
+				intent = new Intent(this, SettingsActivity.class);
 				break;
 			
 		}
