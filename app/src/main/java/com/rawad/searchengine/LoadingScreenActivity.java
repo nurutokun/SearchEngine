@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-
+import android.util.Log;
 
 public class LoadingScreenActivity extends ActionBarActivity {
 	
@@ -25,6 +25,8 @@ public class LoadingScreenActivity extends ActionBarActivity {
 		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
 		
 		LoadingIntentService.startActionFoo(getApplicationContext(), "first thing", "second thing");
+		
+		Log.i("com.rawad.searchengine", "loading screen activity started");
 		
 		startActivity(new Intent(this, MainActivity.class));
 		

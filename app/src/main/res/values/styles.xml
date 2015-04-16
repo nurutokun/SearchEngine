@@ -1,13 +1,16 @@
 <resources>
     
     <color name="base_color">#4000FF00</color>
+    <color name="text_color">#70FF0000</color>
     
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         
+        <item name="android:windowBackground">@color/base_color</item>
         <item name="android:colorBackground">@color/base_color</item>
         <item name="android:tint">@color/base_color</item>
+        <item name="android:textColor">@color/text_color</item>
         
     </style>
 
