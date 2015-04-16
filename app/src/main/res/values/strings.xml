@@ -10,5 +10,6 @@
     <string name="copyright_statement">By Egah and Rawad. Copyright 2015</string>
     <string name="search">Search</string>
     <string name="read">Read</string>
-    
+    <string name="title_activity_settings">SettingsActivity</string>
+
 </resources>
