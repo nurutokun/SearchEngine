@@ -6,14 +6,23 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.rawad.searchengine.SettingsActivity">
+                tools:context="com.rawad.searchengine.SearchingActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:minWidth="300dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save_and_exit"
-        android:id="@+id/saveButton"
-        android:layout_alignParentBottom="true"
+        android:text="Search"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:onClick="saveAndExit"/>
+        android:onClick="onClickSearch"/>
 </RelativeLayout>

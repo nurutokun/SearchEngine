@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
 	    addContentView(drawer, new ViewGroup.LayoutParams(50, 50));// width, height
 	    
 	    // if(!loaded)
-	    startActivity(new Intent(this, LoadingScreenActivity.class));
+//	    startActivity(new Intent(this, LoadingScreenActivity.class));
 	    
 	    
     }
@@ -37,10 +37,12 @@ public class MainActivity extends ActionBarActivity {
 			
 			case R.id.searchButton:
 				// go to search activity
+				intent = new Intent(this, SearchingActivity.class);
 				break;
 			
 			case R.id.readButton:
 				// go to read activity
+				intent = new Intent(this, ReadingActivity.class);
 				break;
 			
 			case R.id.gearIcon:

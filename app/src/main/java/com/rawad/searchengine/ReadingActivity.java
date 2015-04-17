@@ -1,32 +1,21 @@
 package com.rawad.searchengine;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.util.Log;
+import android.view.View;
 
-public class LoadingScreenActivity extends ActionBarActivity {
-	
-	// Create a new thread to update the progress of this using the setProgress(int) method
-	private ProgressBar initialProgressBar;
-	// Maybe main thread updates this?
-	private ImageView loaderAnimation;
-	
+public class ReadingActivity extends ActionBarActivity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_loading_screen);
-		
-		initialProgressBar = (ProgressBar) findViewById(R.id.initialProgressBar);
-		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
-		
-		LoadingIntentService.startActionFoo(getApplicationContext(), "first thing", "second thing");
-		
-		Log.i("com.rawad.searchengine", "loading screen activity started");
+		setContentView(R.layout.activity_reading);
+	}
+	
+	public void backToMain(View view) {
 		
 		startActivity(new Intent(this, MainActivity.class));
 		
@@ -35,7 +24,7 @@ public class LoadingScreenActivity extends ActionBarActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_loading_screen, menu);
+		getMenuInflater().inflate(R.menu.menu_reading, menu);
 		return true;
 	}
 
@@ -53,5 +42,4 @@ public class LoadingScreenActivity extends ActionBarActivity {
 
 		return super.onOptionsItemSelected(item);
 	}
-	
 }
