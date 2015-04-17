@@ -24,11 +24,30 @@ public class LoadingScreenActivity extends ActionBarActivity {
 		initialProgressBar = (ProgressBar) findViewById(R.id.initialProgressBar);
 		loaderAnimation = (ImageView) findViewById(R.id.loaderAnimation);
 		
-		LoadingIntentService.startActionFoo(getApplicationContext(), "first thing", "second thing");
+		LoadingIntentService.startActionFoo(getApplicationContext(), "first set of info", "other set of info");
 		
 		Log.i("com.rawad.searchengine", "loading screen activity started");
 		
-		startActivity(new Intent(this, MainActivity.class));
+		new Thread(new Runnable() {
+			
+			public void run() {
+				
+				for(int i = 0; i < initialProgressBar.getMax(); i++) {
+					initialProgressBar.setProgress(i);
+					
+					try {
+						Thread.sleep(100);
+					} catch(Exception ex) {
+						Log.i("com.rawad.searchengine", "problem happened with the sleeping of the thread: " + ex);
+					}
+					
+				}
+				
+				startActivity(new Intent(LoadingScreenActivity.this, MainActivity.class));
+				
+			}
+			
+		}).start();
 		
 	}
 	

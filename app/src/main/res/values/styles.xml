@@ -1,7 +1,8 @@
 <resources>
     
-    <color name="base_color">#4000FF00</color>
-    <color name="text_color">#70FF0000</color>
+    <!-- In old API's, alpha (left 2 bits) aren't supported -->
+    <color name="base_color">#FF00FF00</color>
+    <color name="text_color">#FFFF0000</color>
     
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

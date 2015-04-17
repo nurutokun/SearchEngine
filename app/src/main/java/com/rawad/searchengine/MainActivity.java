@@ -3,6 +3,7 @@ package com.rawad.searchengine;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +13,14 @@ public class MainActivity extends ActionBarActivity {
 	
     private DrawingView drawer;
 	
+	private static boolean loaded = false;
+
+	/**
+	 * A new object of any Activity is created every time the onCreate method is called (or vice versa) so the {@code loaded}
+	 * variable needs to be static
+	 * 
+	 * @param savedInstanceState
+	 */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +30,13 @@ public class MainActivity extends ActionBarActivity {
 		
 	    addContentView(drawer, new ViewGroup.LayoutParams(50, 50));// width, height
 	    
-	    // if(!loaded)
-//	    startActivity(new Intent(this, LoadingScreenActivity.class));
+	    // CHeck if actually loded and change the loaded variable accordingly
+	    
+	    if(!loaded) {
+		    loaded = true;
+			
+			startActivity(new Intent(this, LoadingScreenActivity.class));
+	    }
 	    
 	    
     }

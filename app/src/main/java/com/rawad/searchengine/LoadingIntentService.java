@@ -96,7 +96,7 @@ public class LoadingIntentService extends IntentService {
 	 */
 	private void handleActionFoo(String param1, String param2) {
 		// TODO: Handle action Foo
-		Log.i("com.rawad.searchengine", "Started Foo Action");
+		Log.i("com.rawad.searchengine", "Started Foo Action with parameters: \"" + param1 + "\", \"" + param2 + "\"");
 	}
 	
 	/**
