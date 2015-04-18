@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
 		
 	    addContentView(drawer, new ViewGroup.LayoutParams(50, 50));// width, height
 	    
-	    // CHeck if actually loaded and change the loaded variable accordingly
+	    // Check if actually loaded and change the loaded variable accordingly
 	    
 	    if(!loaded) {
 		    loaded = true;
