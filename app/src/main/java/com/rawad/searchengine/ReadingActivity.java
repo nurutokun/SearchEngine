@@ -23,9 +23,8 @@ public class ReadingActivity extends ActionBarActivity {
 	@Override 
 	public boolean searchOnClickBar(Menu searchbar){
 		OnClickEventListner(userInput, search); 
-	/* Needs some work on the search method in the read class, You need to create search sub class for both read class and
-         search class. 
-	//	
+	// Needs some work on the search method in the read class, You need to create search sub class for both read class and search class
+ 
 		
 	
 	}
