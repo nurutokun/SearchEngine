@@ -20,16 +20,7 @@ public class ReadingActivity extends ActionBarActivity {
 		startActivity(new Intent(this, MainActivity.class));
 		
 	}
-	@Override 
-	public boolean searchOnClickBar(SearchBar searchbar){
-		OnClickEventListner(userInput, search view); 
-	// Needs some work on the search method in the read class, 
-	//You need to create search sub class for both read class and search class.
- 
-		
-	
-	}
-	
+	 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
